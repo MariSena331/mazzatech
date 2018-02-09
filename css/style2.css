@@ -51,3 +51,6 @@ main{
     left: initial;
     font-size: 14px;
   }
+  body {
+    background-color: #f5f5f5;
+  }
