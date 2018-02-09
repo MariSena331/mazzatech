@@ -6,6 +6,7 @@
   "author": "Sanhaço <mariana7007@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "angular": "1.6.7",
     "jquery": "^3.3.1"
   }
 }
