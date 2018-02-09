@@ -66,23 +66,43 @@
                             <h1>Novo Paciente</h1>
                             <form>
                                 <div class="form-group">
-                                    <label>Nome Completo</label>
+                                    <label>Nome</label>
                                     <input type="text" class="form-control" placeholder="Nome"> 
                                 </div>
                                 <div class="form-group">
-                                        <label for="example-date-input" class="col-2 col-form-label">Data de Nascimento</label>
+                                        <label for="example-date-input" class="col-2 col-form-label">Data</label>
                                         <div class="col-10">
                                           <input class="form-control" type="date" value="getdate()" id="example-date-input">
                                         </div>
                                 <div class="checkbox">
                                 <div class="form-group">
-                                    <label>Plano de Saúde</label>
-                                    <input type="text" class="form-control">
+                                    <label>Dia da Semana</label>
+                                    <input type="text" class="form-control" placeholder="Dia da Semana">
                                     
                                 </div>
                                 <div class="form-group">
-                                    <label>Tipo Sanguíneo</label>
-                                    <input type="text" class="form-control"> 
+                                    <label>Horário</label>
+                                    <div class="container">
+                                            <div class="row">
+                                                <div class='col-sm-6'>
+                                                    <div class="form-group">
+                                                        <div class='input-group date' id='datetimepicker3'>
+                                                            <input type='text' class="form-control" />
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-time"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script type="text/javascript">
+                                                    $(function () {
+                                                        $('#datetimepicker3').datetimepicker({
+                                                            format: 'LT'
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
                                 </div>
                                 </div>
                                 <button type="submit" class="btn btn-info">Salvar</button>

@@ -9,13 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
   </head>
   <body>
       <header>
@@ -33,26 +27,22 @@
                   </div>
                   <div id="navbarCollapse" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav navbar-right">
-                          <li class="active"><a href="#">Home</a></li>
+                          <li class="active"><a href="#" type="button" onclick="window.location.href='menu.html'">Home</a></li>
                           <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pacientes<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                  <li><a href="#">Nova Paciente</a></li>
-                                  <li><a href="#">Pacientes Registrados</a></li>
+                                  <li><a href="#" type="button" onclick="window.location.href='novoPaciente.html'">Novo Paciente</a></li>
+                                  <li><a href="#" type="button" onclick="window.location.href='pacienteRegistrado.html'">Pacientes Registrados</a></li>
                                 </ul>
                               </li>
                           <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Consultas<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                  <li><a href="#">Nova Consulta</a></li>
-                                  <li><a href="#">Consultas marcadas</a></li>
-                                  <!--li role="separator" class="divider"></li>
-                                  <li><a href="#">Separated link</a></li>
-                                  <li role="separator" class="divider"></li>
-                                  <li><a href="#">One more separated link</a></li>-->
+                                  <li><a href="#" onclick="window.location.href='novaConsulta.html'">Nova Consulta</a></li>
+                                  <li><a href="#" type="button" onclick="window.location.href='consultasMarcadas.html'">Consultas marcadas</a></li>
                                 </ul>
                               </li>
-                        <li class="active"><a href="#">Nova Receita</a></li>
+                        <li class="active"><a href="#" type="button" onclick="window.location='Paciente.docx'">Gerar Receita</a></li>
                       </ul>
                   </div>
               </div>
@@ -60,9 +50,724 @@
           
       </header>
       <main>
-          
-      </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            
+                <table id="my-table" class="display">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                        <th>Tipo Sanguíneo</th>
+                        <th>Plano de Saúde</th>
+                      </tr>
+                      <tr>
+                        <td>24612</td>
+                        <td>Cecilia</td>
+                        <td>12/28/2017</td>
+                        <td>25</td>
+                        <td>Eget Ipsum Suspendisse LLP</td>
+                      </tr>
+                      <tr>
+                        <td>93965</td>
+                        <td>Yetta</td>
+                        <td>11/23/2018</td>
+                        <td>75</td>
+                        <td>Sodales Nisi Magna Incorporated</td>
+                      </tr>
+                      <tr>
+                        <td>70027</td>
+                        <td>Margaret</td>
+                        <td>05/23/2017</td>
+                        <td>98</td>
+                        <td>Vitae Aliquam Corporation</td>
+                      </tr>
+                      <tr>
+                        <td>27581</td>
+                        <td>Devin</td>
+                        <td>07/08/2017</td>
+                        <td>06</td>
+                        <td>Facilisis Lorem Tristique Company</td>
+                      </tr>
+                      <tr>
+                        <td>13369</td>
+                        <td>Byron</td>
+                        <td>12/04/2017</td>
+                        <td>40</td>
+                        <td>Imperdiet Dictum Associates</td>
+                      </tr>
+                      <tr>
+                        <td>71813</td>
+                        <td>Brady</td>
+                        <td>05/10/2018</td>
+                        <td>85</td>
+                        <td>Mus Consulting</td>
+                      </tr>
+                      <tr>
+                        <td>14949</td>
+                        <td>Tobias</td>
+                        <td>06/17/2018</td>
+                        <td>25</td>
+                        <td>Et Foundation</td>
+                      </tr>
+                      <tr>
+                        <td>78639</td>
+                        <td>Kristen</td>
+                        <td>01/10/2018</td>
+                        <td>99</td>
+                        <td>Sagittis Incorporated</td>
+                      </tr>
+                      <tr>
+                        <td>38337</td>
+                        <td>Sandra</td>
+                        <td>04/25/2017</td>
+                        <td>11</td>
+                        <td>Feugiat Sed Nec Consulting</td>
+                      </tr>
+                      <tr>
+                        <td>38318</td>
+                        <td>Shea</td>
+                        <td>07/01/2018</td>
+                        <td>16</td>
+                        <td>Sem Ut PC</td>
+                      </tr>
+                      <tr>
+                        <td>65162</td>
+                        <td>Donovan</td>
+                        <td>10/05/2018</td>
+                        <td>35</td>
+                        <td>Mauris Sagittis Institute</td>
+                      </tr>
+                      <tr>
+                        <td>04608</td>
+                        <td>Mercedes</td>
+                        <td>04/05/2017</td>
+                        <td>70</td>
+                        <td>Ipsum Non Arcu Corporation</td>
+                      </tr>
+                      <tr>
+                        <td>38290</td>
+                        <td>Yuri</td>
+                        <td>08/02/2018</td>
+                        <td>28</td>
+                        <td>Tincidunt Neque Vitae Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>08429</td>
+                        <td>Reece</td>
+                        <td>07/26/2018</td>
+                        <td>87</td>
+                        <td>Rutrum Limited</td>
+                      </tr>
+                      <tr>
+                        <td>69967</td>
+                        <td>Elmo</td>
+                        <td>04/28/2018</td>
+                        <td>27</td>
+                        <td>Non Massa Company</td>
+                      </tr>
+                      <tr>
+                        <td>83477</td>
+                        <td>Savannah</td>
+                        <td>07/01/2017</td>
+                        <td>60</td>
+                        <td>Turpis Vitae Corporation</td>
+                      </tr>
+                      <tr>
+                        <td>94214</td>
+                        <td>John</td>
+                        <td>01/10/2019</td>
+                        <td>66</td>
+                        <td>Et Eros Inc.</td>
+                      </tr>
+                      <tr>
+                        <td>62761</td>
+                        <td>Farrah</td>
+                        <td>03/11/2017</td>
+                        <td>30</td>
+                        <td>Erat Eget Associates</td>
+                      </tr>
+                      <tr>
+                        <td>48245</td>
+                        <td>Michael</td>
+                        <td>05/08/2017</td>
+                        <td>04</td>
+                        <td>Felis Eget Varius Incorporated</td>
+                      </tr>
+                      <tr>
+                        <td>03099</td>
+                        <td>Abra</td>
+                        <td>09/15/2018</td>
+                        <td>81</td>
+                        <td>Mattis Inc.</td>
+                      </tr>
+                      <tr>
+                        <td>88785</td>
+                        <td>Jack</td>
+                        <td>07/29/2017</td>
+                        <td>37</td>
+                        <td>Vulputate Posuere Vulputate Institute</td>
+                      </tr>
+                      <tr>
+                        <td>58955</td>
+                        <td>Lisandra</td>
+                        <td>02/21/2017</td>
+                        <td>16</td>
+                        <td>Ornare Placerat Orci Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>48828</td>
+                        <td>Bertha</td>
+                        <td>04/18/2018</td>
+                        <td>77</td>
+                        <td>Nonummy Ac Corp.</td>
+                      </tr>
+                      <tr>
+                        <td>43421</td>
+                        <td>Melyssa</td>
+                        <td>05/14/2018</td>
+                        <td>00</td>
+                        <td>Egestas Company</td>
+                      </tr>
+                      <tr>
+                        <td>44343</td>
+                        <td>Catherine</td>
+                        <td>08/20/2018</td>
+                        <td>74</td>
+                        <td>Adipiscing Lobortis Inc.</td>
+                      </tr>
+                      <tr>
+                        <td>70987</td>
+                        <td>Ashely</td>
+                        <td>02/14/2017</td>
+                        <td>31</td>
+                        <td>Purus Mauris A Industries</td>
+                      </tr>
+                      <tr>
+                        <td>53886</td>
+                        <td>Noel</td>
+                        <td>04/05/2017</td>
+                        <td>35</td>
+                        <td>Tellus Eu Corp.</td>
+                      </tr>
+                      <tr>
+                        <td>54355</td>
+                        <td>Kirk</td>
+                        <td>12/30/2017</td>
+                        <td>54</td>
+                        <td>Leo LLC</td>
+                      </tr>
+                      <tr>
+                        <td>64025</td>
+                        <td>Robert</td>
+                        <td>11/12/2017</td>
+                        <td>96</td>
+                        <td>Pede Associates</td>
+                      </tr>
+                      <tr>
+                        <td>33004</td>
+                        <td>Abraham</td>
+                        <td>04/07/2017</td>
+                        <td>68</td>
+                        <td>Nunc Commodo Auctor Foundation</td>
+                      </tr>
+                      <tr>
+                        <td>00881</td>
+                        <td>Naomi</td>
+                        <td>10/22/2018</td>
+                        <td>16</td>
+                        <td>Nulla Vulputate LLC</td>
+                      </tr>
+                      <tr>
+                        <td>39113</td>
+                        <td>Veda</td>
+                        <td>01/28/2018</td>
+                        <td>17</td>
+                        <td>Donec Foundation</td>
+                      </tr>
+                      <tr>
+                        <td>47731</td>
+                        <td>Iola</td>
+                        <td>01/27/2019</td>
+                        <td>70</td>
+                        <td>Mollis Phasellus Libero Company</td>
+                      </tr>
+                      <tr>
+                        <td>56470</td>
+                        <td>Rhiannon</td>
+                        <td>09/25/2018</td>
+                        <td>70</td>
+                        <td>Aliquam Nec Enim Associates</td>
+                      </tr>
+                      <tr>
+                        <td>58757</td>
+                        <td>Stephen</td>
+                        <td>07/20/2017</td>
+                        <td>54</td>
+                        <td>Massa Suspendisse Eleifend Foundation</td>
+                      </tr>
+                      <tr>
+                        <td>12246</td>
+                        <td>Carl</td>
+                        <td>03/16/2017</td>
+                        <td>94</td>
+                        <td>Vestibulum Massa LLC</td>
+                      </tr>
+                      <tr>
+                        <td>16944</td>
+                        <td>Lev</td>
+                        <td>06/03/2017</td>
+                        <td>21</td>
+                        <td>Quisque Purus Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>33126</td>
+                        <td>Nathan</td>
+                        <td>04/14/2017</td>
+                        <td>53</td>
+                        <td>In Faucibus LLC</td>
+                      </tr>
+                      <tr>
+                        <td>55484</td>
+                        <td>Conan</td>
+                        <td>07/04/2018</td>
+                        <td>53</td>
+                        <td>Sit Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>79508</td>
+                        <td>Emery</td>
+                        <td>01/06/2019</td>
+                        <td>03</td>
+                        <td>Mauris Associates</td>
+                      </tr>
+                      <tr>
+                        <td>72445</td>
+                        <td>Martin</td>
+                        <td>01/22/2018</td>
+                        <td>27</td>
+                        <td>Viverra Maecenas Iaculis Associates</td>
+                      </tr>
+                      <tr>
+                        <td>61193</td>
+                        <td>Neil</td>
+                        <td>08/16/2017</td>
+                        <td>30</td>
+                        <td>Nostra Per Inceptos Corporation</td>
+                      </tr>
+                      <tr>
+                        <td>48274</td>
+                        <td>Susan</td>
+                        <td>03/15/2017</td>
+                        <td>99</td>
+                        <td>Sapien Cursus In Associates</td>
+                      </tr>
+                      <tr>
+                        <td>56393</td>
+                        <td>Indigo</td>
+                        <td>11/09/2017</td>
+                        <td>44</td>
+                        <td>Nulla Institute</td>
+                      </tr>
+                      <tr>
+                        <td>09513</td>
+                        <td>Doris</td>
+                        <td>05/06/2017</td>
+                        <td>83</td>
+                        <td>Orci Incorporated</td>
+                      </tr>
+                      <tr>
+                        <td>12658</td>
+                        <td>Phillip</td>
+                        <td>08/25/2017</td>
+                        <td>70</td>
+                        <td>Non Vestibulum Nec Associates</td>
+                      </tr>
+                      <tr>
+                        <td>18340</td>
+                        <td>Marcia</td>
+                        <td>12/13/2018</td>
+                        <td>94</td>
+                        <td>Vulputate Eu Limited</td>
+                      </tr>
+                      <tr>
+                        <td>95873</td>
+                        <td>Emmanuel</td>
+                        <td>12/15/2017</td>
+                        <td>75</td>
+                        <td>At Lacus Quisque Inc.</td>
+                      </tr>
+                      <tr>
+                        <td>63320</td>
+                        <td>Jaquelyn</td>
+                        <td>11/25/2018</td>
+                        <td>05</td>
+                        <td>Suspendisse Aliquet Molestie Industries</td>
+                      </tr>
+                      <tr>
+                        <td>76354</td>
+                        <td>Troy</td>
+                        <td>10/12/2017</td>
+                        <td>88</td>
+                        <td>Aliquam Auctor Institute</td>
+                      </tr>
+                      <tr>
+                        <td>61904</td>
+                        <td>Patricia</td>
+                        <td>04/17/2018</td>
+                        <td>83</td>
+                        <td>Justo Proin Non Industries</td>
+                      </tr>
+                      <tr>
+                        <td>17965</td>
+                        <td>Burton</td>
+                        <td>07/21/2017</td>
+                        <td>32</td>
+                        <td>Feugiat Tellus Lorem LLP</td>
+                      </tr>
+                      <tr>
+                        <td>41586</td>
+                        <td>Salvador</td>
+                        <td>10/13/2018</td>
+                        <td>69</td>
+                        <td>A Corp.</td>
+                      </tr>
+                      <tr>
+                        <td>84344</td>
+                        <td>Rae</td>
+                        <td>12/25/2017</td>
+                        <td>93</td>
+                        <td>Eleifend Corp.</td>
+                      </tr>
+                      <tr>
+                        <td>89845</td>
+                        <td>Ross</td>
+                        <td>09/22/2017</td>
+                        <td>31</td>
+                        <td>Ipsum Suspendisse Non Incorporated</td>
+                      </tr>
+                      <tr>
+                        <td>95811</td>
+                        <td>Vielka</td>
+                        <td>02/02/2018</td>
+                        <td>07</td>
+                        <td>Lorem Corporation</td>
+                      </tr>
+                      <tr>
+                        <td>57590</td>
+                        <td>Francesca</td>
+                        <td>10/14/2018</td>
+                        <td>58</td>
+                        <td>Eu Augue Porttitor Company</td>
+                      </tr>
+                      <tr>
+                        <td>12203</td>
+                        <td>Cheyenne</td>
+                        <td>10/27/2018</td>
+                        <td>67</td>
+                        <td>Malesuada LLC</td>
+                      </tr>
+                      <tr>
+                        <td>05155</td>
+                        <td>Grace</td>
+                        <td>12/05/2017</td>
+                        <td>21</td>
+                        <td>Cras Incorporated</td>
+                      </tr>
+                      <tr>
+                        <td>19109</td>
+                        <td>Wing</td>
+                        <td>08/09/2018</td>
+                        <td>42</td>
+                        <td>Eu Tempor Erat Inc.</td>
+                      </tr>
+                      <tr>
+                        <td>45870</td>
+                        <td>Janna</td>
+                        <td>08/28/2018</td>
+                        <td>19</td>
+                        <td>Etiam Laoreet Libero Industries</td>
+                      </tr>
+                      <tr>
+                        <td>55770</td>
+                        <td>Christen</td>
+                        <td>07/13/2018</td>
+                        <td>56</td>
+                        <td>Mattis Velit Justo Industries</td>
+                      </tr>
+                      <tr>
+                        <td>25234</td>
+                        <td>Nita</td>
+                        <td>02/22/2017</td>
+                        <td>81</td>
+                        <td>Velit Inc.</td>
+                      </tr>
+                      <tr>
+                        <td>72078</td>
+                        <td>Ralph</td>
+                        <td>11/17/2017</td>
+                        <td>16</td>
+                        <td>A Auctor Company</td>
+                      </tr>
+                      <tr>
+                        <td>64691</td>
+                        <td>Barry</td>
+                        <td>08/17/2017</td>
+                        <td>22</td>
+                        <td>Vestibulum Industries</td>
+                      </tr>
+                      <tr>
+                        <td>54356</td>
+                        <td>Byron</td>
+                        <td>07/26/2018</td>
+                        <td>93</td>
+                        <td>Imperdiet Nec Leo Corporation</td>
+                      </tr>
+                      <tr>
+                        <td>81241</td>
+                        <td>Vaughan</td>
+                        <td>06/12/2017</td>
+                        <td>56</td>
+                        <td>Dignissim Maecenas Ornare Limited</td>
+                      </tr>
+                      <tr>
+                        <td>83966</td>
+                        <td>Allen</td>
+                        <td>05/31/2017</td>
+                        <td>59</td>
+                        <td>Metus Aenean Sed Industries</td>
+                      </tr>
+                      <tr>
+                        <td>99670</td>
+                        <td>Yoshi</td>
+                        <td>07/17/2018</td>
+                        <td>26</td>
+                        <td>Elit Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>54204</td>
+                        <td>Quentin</td>
+                        <td>02/17/2017</td>
+                        <td>58</td>
+                        <td>Augue Inc.</td>
+                      </tr>
+                      <tr>
+                        <td>73479</td>
+                        <td>Ashton</td>
+                        <td>11/22/2017</td>
+                        <td>86</td>
+                        <td>Ipsum Company</td>
+                      </tr>
+                      <tr>
+                        <td>88237</td>
+                        <td>Shana</td>
+                        <td>07/04/2018</td>
+                        <td>67</td>
+                        <td>Cras Foundation</td>
+                      </tr>
+                      <tr>
+                        <td>73452</td>
+                        <td>Roth</td>
+                        <td>03/13/2018</td>
+                        <td>22</td>
+                        <td>Velit Eget Laoreet Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>35727</td>
+                        <td>Dillon</td>
+                        <td>01/12/2019</td>
+                        <td>36</td>
+                        <td>Id Risus Quis Associates</td>
+                      </tr>
+                      <tr>
+                        <td>83181</td>
+                        <td>Gabriel</td>
+                        <td>08/18/2018</td>
+                        <td>06</td>
+                        <td>Vitae Incorporated</td>
+                      </tr>
+                      <tr>
+                        <td>98437</td>
+                        <td>Dacey</td>
+                        <td>04/01/2017</td>
+                        <td>39</td>
+                        <td>Ut Tincidunt Industries</td>
+                      </tr>
+                      <tr>
+                        <td>62476</td>
+                        <td>Whitney</td>
+                        <td>11/21/2017</td>
+                        <td>15</td>
+                        <td>Id Risus Corp.</td>
+                      </tr>
+                      <tr>
+                        <td>61807</td>
+                        <td>Fitzgerald</td>
+                        <td>01/10/2019</td>
+                        <td>51</td>
+                        <td>Eu Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>50169</td>
+                        <td>Kristen</td>
+                        <td>10/24/2018</td>
+                        <td>23</td>
+                        <td>Posuere Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>57449</td>
+                        <td>Nyssa</td>
+                        <td>04/19/2018</td>
+                        <td>44</td>
+                        <td>Et Corporation</td>
+                      </tr>
+                      <tr>
+                        <td>82152</td>
+                        <td>Amity</td>
+                        <td>11/19/2018</td>
+                        <td>40</td>
+                        <td>Sed Consequat LLC</td>
+                      </tr>
+                      <tr>
+                        <td>06790</td>
+                        <td>Graham</td>
+                        <td>03/25/2018</td>
+                        <td>32</td>
+                        <td>Dolor Consulting</td>
+                      </tr>
+                      <tr>
+                        <td>51744</td>
+                        <td>Hall</td>
+                        <td>08/14/2017</td>
+                        <td>45</td>
+                        <td>Montes Nascetur Corporation</td>
+                      </tr>
+                      <tr>
+                        <td>66709</td>
+                        <td>Ora</td>
+                        <td>03/12/2018</td>
+                        <td>33</td>
+                        <td>Tempus Corp.</td>
+                      </tr>
+                      <tr>
+                        <td>91266</td>
+                        <td>Amery</td>
+                        <td>02/01/2019</td>
+                        <td>67</td>
+                        <td>Nec Orci Donec LLC</td>
+                      </tr>
+                      <tr>
+                        <td>30815</td>
+                        <td>Armand</td>
+                        <td>01/16/2018</td>
+                        <td>45</td>
+                        <td>Urna Vivamus Molestie Limited</td>
+                      </tr>
+                      <tr>
+                        <td>01138</td>
+                        <td>Suki</td>
+                        <td>11/13/2017</td>
+                        <td>17</td>
+                        <td>Tellus Id Corporation</td>
+                      </tr>
+                      <tr>
+                        <td>34047</td>
+                        <td>Moses</td>
+                        <td>09/07/2018</td>
+                        <td>65</td>
+                        <td>Pede Corp.</td>
+                      </tr>
+                      <tr>
+                        <td>93908</td>
+                        <td>Raven</td>
+                        <td>10/23/2017</td>
+                        <td>36</td>
+                        <td>Enim Limited</td>
+                      </tr>
+                      <tr>
+                        <td>02087</td>
+                        <td>Raven</td>
+                        <td>12/02/2017</td>
+                        <td>38</td>
+                        <td>Semper Auctor Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>00626</td>
+                        <td>Kitra</td>
+                        <td>07/02/2017</td>
+                        <td>77</td>
+                        <td>Sed Institute</td>
+                      </tr>
+                      <tr>
+                        <td>04459</td>
+                        <td>Victoria</td>
+                        <td>11/22/2017</td>
+                        <td>89</td>
+                        <td>Elit Nulla Consulting</td>
+                      </tr>
+                      <tr>
+                        <td>61375</td>
+                        <td>Adam</td>
+                        <td>06/29/2017</td>
+                        <td>79</td>
+                        <td>Nunc Mauris Elit PC</td>
+                      </tr>
+                      <tr>
+                        <td>33110</td>
+                        <td>Kaitlin</td>
+                        <td>12/17/2017</td>
+                        <td>60</td>
+                        <td>Suscipit Incorporated</td>
+                      </tr>
+                      <tr>
+                        <td>99260</td>
+                        <td>Bree</td>
+                        <td>04/08/2017</td>
+                        <td>88</td>
+                        <td>Nulla Inc.</td>
+                      </tr>
+                      <tr>
+                        <td>36059</td>
+                        <td>Tyler</td>
+                        <td>05/14/2017</td>
+                        <td>56</td>
+                        <td>Ac Fermentum Industries</td>
+                      </tr>
+                      <tr>
+                        <td>46075</td>
+                        <td>Rana</td>
+                        <td>04/23/2017</td>
+                        <td>76</td>
+                        <td>Nunc LLP</td>
+                      </tr>
+                      <tr>
+                        <td>01105</td>
+                        <td>Gary</td>
+                        <td>06/10/2017</td>
+                        <td>51</td>
+                        <td>Nisi A Institute</td>
+                      </tr>
+                      <tr>
+                        <td>48325</td>
+                        <td>Armand</td>
+                        <td>09/18/2017</td>
+                        <td>42</td>
+                        <td>Vitae Incorporated</td>
+                      </tr>
+                      <tr>
+                        <td>98456</td>
+                        <td>Byron</td>
+                        <td>03/11/2017</td>
+                        <td>89</td>
+                        <td>Ultrices Sit Amet Company</td>
+                      </tr>
+                      </table>
+                    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#my-table').DataTable();
+        });
+    </script>
     <script src="js/bootstrap.min.js"></script>
+      </main>
   </body>
 </html>
